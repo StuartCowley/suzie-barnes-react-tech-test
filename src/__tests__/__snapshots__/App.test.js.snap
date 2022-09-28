@@ -28,6 +28,8 @@ exports[`App renders correctly 1`] = `
         </button>
       </form>
     </div>
+    <br />
+    <br />
     <p>
       No results
     </p>
