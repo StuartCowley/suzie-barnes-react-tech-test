@@ -1,0 +1,10 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.nasa-image {
+  margin: auto;
+  width: 500px;
+  height: 300px;
+}
