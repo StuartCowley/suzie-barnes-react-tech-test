@@ -5,9 +5,26 @@ import SearchResults from "../components/SearchResults";
 describe("Search Results", () => {
     const validProps = {
         results: [
-            { url: "url1" },
-            { url: "url2" },
-            { url: "url3" }
+            {
+                key: [123],
+                className: "search-results__images",
+                src: "StubImage1",
+                alt: "search-results__image",
+            },
+
+            {
+                key: [124],
+                className: "search-results__images",
+                src: "StubImage2",
+                alt: "search-results__image",
+            },
+
+            {
+                key: [125],
+                className: "search-results__images",
+                src: "StubImage3",
+                alt: "search-results__image",
+            }
         ]
     };
     const { asFragment } = render(
@@ -15,12 +32,17 @@ describe("Search Results", () => {
             results={validProps.results}
         />);
 
+    render(
+        <SearchResults
+            results={validProps.results}
+        />
+    );
     it("renders correctly", () => {
         expect(asFragment()).toMatchSnapshot()
     })
 
     it("renders the correct number of images", () => {
-        const { getAllByTestId } = render(
+        render(
             <SearchResults
                 results={validProps.results}
             />
@@ -28,4 +50,21 @@ describe("Search Results", () => {
         expect(screen.getAllByTestId("search-results-test")).toHaveLength(3)
     })
 
+    it("loads the heading Image Results", () => {
+        render(
+            <SearchResults
+                results={validProps.results}
+            />
+        );
+        expect(screen.getByText("Image Results:")).toBeInstanceOf(HTMLHeadingElement)
+    })
+
+    it("loads No results if no results found", () => {
+        render(
+            <SearchResults
+                results={[]}
+            />
+        );
+        expect(screen.getByText("No results")).toBeInstanceOf(HTMLParagraphElement);
+    })
 })

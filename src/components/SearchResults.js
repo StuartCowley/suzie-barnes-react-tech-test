@@ -9,6 +9,7 @@ const SearchResults = ({ results }) => {
     } else {
         return (
             <div className="search-results">
+                <h1>Image Results:</h1>
                 {
                     results.map((image, index) => (
                         <img

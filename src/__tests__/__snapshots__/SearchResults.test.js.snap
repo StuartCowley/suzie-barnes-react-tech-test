@@ -5,6 +5,9 @@ exports[`Search Results renders correctly 1`] = `
   <div
     class="search-results"
   >
+    <h1>
+      Image Results:
+    </h1>
     <img
       alt="search-results__image"
       class="search-results__images"
