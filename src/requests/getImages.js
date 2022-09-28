@@ -7,12 +7,16 @@ const getImages = (query) => {
         return axios
             .get(`https://images-api.nasa.gov/search?q=${query}`)
             .then((response) => {
-                // const imageResults = response.data.collection.items
-                // console.log(imageResults)
-                // const parsedImages = imageResults.data[0].filter(media_type => media_type === "image")
-                // const images = parsedImages.map(image => image.links[0].href)
-                // return images
-                console.log(response.data.collection.items)
+                const imageResults = response.data.collection.items
+                // console.log(imageResults, "<=== imageResults")
+
+                const parsedImages = imageResults.filter(function (ele) {
+                    return ele.data[0].media_type === "image"
+                })
+                // console.log(parsedImages, "<=== parsedImages")
+                const images = parsedImages.map(image => image.links[0].href)
+                console.log(images, "<=== images")
+                return images
             })
             .catch((err) => {
                 console.log(err);
