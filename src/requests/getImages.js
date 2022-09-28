@@ -15,7 +15,7 @@ const getImages = (query) => {
                 })
                 // console.log(parsedImages, "<=== parsedImages")
                 const images = parsedImages.map(image => image.links[0].href)
-                console.log(images, "<=== images")
+                // console.log(images, "<=== images")
                 return images
             })
             .catch((err) => {
