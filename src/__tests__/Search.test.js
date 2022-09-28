@@ -9,14 +9,17 @@ const validProps = {
 }
 
 describe("Search", () => {
-    const { asFragment } = render(<Search />);
+    const { asFragment } = render(<Search
+        search=""
+        setSearchResults={validProps.setSearchResults}
+        onSubmit={validProps.onSubmit} />);
 
     it("renders correctly", () => {
         expect(asFragment()).toMatchSnapshot()
     });
 
     it("renders the search button correctly", () => {
-        const { getByText } = render(
+        render(
             <Search
                 search=""
                 setSearchResults={validProps.setSearchResults}
@@ -27,6 +30,7 @@ describe("Search", () => {
 
         expect(button).toHaveLength(1);
 
-        // expect(screen.getByText(/submit/i).toBeInstanceOf(HTMLButtonElement))
+        const submitButton = screen.getByText(/submit/i)
+        expect(submitButton).toBeInstanceOf(HTMLButtonElement)
     });
 })
