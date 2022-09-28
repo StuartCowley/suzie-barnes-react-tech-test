@@ -8,6 +8,7 @@ On Desktop Site:
 ![alt text](./public/tech-test-pc.png) 
 
 On Mobile Site:
+
 ![alt text](./public/tech-test-mobile.png) <br />
 
 ----------------
