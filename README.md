@@ -2,8 +2,11 @@
 A NASA search engine which will search the database for records matching your entry.
 
 Just enter the information you are looking for into the search bar and hit "Submit" a list of images matching your description will appear.
+
 On Desktop Site:
+
 ![alt text](./public/tech-test-pc.png) 
+
 On Mobile Site:
 ![alt text](./public/tech-test-mobile.png) <br />
 
