@@ -5,10 +5,7 @@ import SearchResults from "./SearchResults"
 
 const App = () => {
 
-  const [searchResults, setSearchResults] = useState([])
-  // console.log(searchResults)
-  // const individualImage = searchResults.map((e) => console.log(e))
-  // // console.log(individualImage)
+  const [searchResults, setSearchResults] = useState([]);
 
   return (
     <div className="app">
