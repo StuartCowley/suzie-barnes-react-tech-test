@@ -2,11 +2,11 @@
 A NASA search engine which will search the database for records matching your entry.
 
 Just enter the information you are looking for into the search bar and hit "Submit" a list of images matching your description will appear.
-
-![alt text](./public/tech-test-pc.png) <br />
-On Desktop Site <br />
+On Desktop Site:
+![alt text](./public/tech-test-pc.png) 
+On Mobile Site:
 ![alt text](./public/tech-test-mobile.png) <br />
-On Mobile Site
+
 ----------------
  ### Installation Instructions
 1. Run `git clone https://github.com/SuzBarnes/react-tech-test.git` into the console.
@@ -22,14 +22,15 @@ On Mobile Site
 ----------------
 ### How to use:
 1. Use the search bar to enter the image you would like to look for: 
-<br />
+
 ![alt text](./public/type-in-search.png)
 
 2. Click the "Search" button
-<br />
+
 ![alt text](./public/hit-submit.png)
 
-3. A table of images fitting the description will be visible. <br />
+3. A table of images fitting the description will be visible.
+
 ![alt text](./public/search-results.png)
 ----------------
 ### Technologies
