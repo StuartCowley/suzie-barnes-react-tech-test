@@ -15,6 +15,8 @@ const App = () => {
         alt="nasaLogo"
       />
       <Search setSearchResults={setSearchResults} />
+      <br />
+      <br />
       <SearchResults results={searchResults} />
     </div>
   );

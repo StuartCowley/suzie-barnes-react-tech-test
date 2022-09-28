@@ -27,6 +27,6 @@ describe("Search", () => {
 
         expect(button).toHaveLength(1);
 
-        // expect(getByText(/search/i).toBeInstanceOf(HTMLButtonElement))
+        expect(getByText(/submit/i).toBeInstanceOf(HTMLButtonElement))
     });
 })

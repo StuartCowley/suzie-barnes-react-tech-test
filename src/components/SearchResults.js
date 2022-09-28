@@ -3,15 +3,16 @@ import "../styles/searchresults.css";
 import PropTypes from "prop-types"
 
 const SearchResults = ({ results }) => {
+
     if (!results.length) {
         return <p>No results</p>
     } else {
         return (
             <div className="search-results">
-                <p>Search Results:</p>
                 {
-                    results.map((image) => (
+                    results.map((image, index) => (
                         <img
+                            key={index}
                             className="search-results__images"
                             src={image}
                             alt="search-results__image"
@@ -23,9 +24,12 @@ const SearchResults = ({ results }) => {
         )
     }
 }
+SearchResults.defaultProps = {
+    results: ""
+}
 
 SearchResults.propTypes = {
-    results: PropTypes.array.isRequired
+    results: PropTypes.array.isRequired,
 }
 
 
