@@ -3,8 +3,10 @@ A NASA search engine which will search the database for records matching your en
 
 Just enter the information you are looking for into the search bar and hit "Submit" a list of images matching your description will appear.
 
-![alt text](./public/tech-test-pc.png)
-![alt text](./public/tech-test-mobile.png)
+![alt text](./public/tech-test-pc.png) <br />
+On Desktop Site <br />
+![alt text](./public/tech-test-mobile.png) <br />
+On Mobile Site
 ----------------
  ### Installation Instructions
 1. Run `git clone https://github.com/SuzBarnes/react-tech-test.git` into the console.
@@ -19,16 +21,22 @@ Just enter the information you are looking for into the search bar and hit "Subm
 |Format| `npx prettier --write .`| Prettier is the ESLint tool used to help with formatting of the App
 ----------------
 ### How to use:
-1. Use the search bar to enter the image you would like to look for
+1. Use the search bar to enter the image you would like to look for: 
+<br />
 ![alt text](./public/type-in-search.png)
+
 2. Click the "Search" button
+<br />
 ![alt text](./public/hit-submit.png)
-3. A table of images fitting the description will be visible.
+
+3. A table of images fitting the description will be visible. <br />
 ![alt text](./public/search-results.png)
 ----------------
 ### Technologies
 - Created by bootstrapping the Create React App (https://github.com/facebook/create-react-app).
 - Uses JavaScript, JSX, CSS.
+- Packages used Axios, PropTypes.
+- Testing utilities used Jest, React Testing Library
 ----------------
 ### Further time
 If I had further time I would have loved to:
