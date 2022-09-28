@@ -3,7 +3,7 @@ import "../styles/search.css";
 import PropTypes from "prop-types"
 import getImages from "../requests/getImages";
 
-const Search = ({ setSearchResults }) => {
+const Search = ({ setSearchResults, onSubmit }) => {
     const [value, setValue] = useState();
 
     const handleSubmit = async (event) => {
@@ -22,6 +22,7 @@ const Search = ({ setSearchResults }) => {
                 <button
                     className="search-button"
                     type="submit"
+                    onClick={onSubmit}
                 >
                     Submit
                 </button>

@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import Search from "../components/Search";
 
 const validProps = {
@@ -33,4 +33,17 @@ describe("Search", () => {
         const submitButton = screen.getByText(/submit/i)
         expect(submitButton).toBeInstanceOf(HTMLButtonElement)
     });
+
+    it("search button works", () => {
+        render(
+            <Search
+                search=""
+                setSearchResults={validProps.setSearchResults}
+                onSubmit={validProps.onSubmit}
+            />
+        );
+        const submitButton = screen.getByText(/submit/i)
+        fireEvent.click(submitButton);
+        expect(validProps.onSubmit).toHaveBeenCalledTimes(1);
+    })
 })
