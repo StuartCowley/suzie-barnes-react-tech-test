@@ -3,8 +3,7 @@
   flex-direction: column;
 }
 
-.nasa-image {
-  margin: auto;
-  width: 500px;
-  height: 300px;
+.nasa-logo {
+  display: flex;
+  flex-wrap: wrap;
 }
