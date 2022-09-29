@@ -4,7 +4,7 @@
     height: 150px;
     border: 10px solid;
     border-color: white;
-
+    padding: 3px;
 }
 
 .search-results__images:hover {
