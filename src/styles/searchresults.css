@@ -1,0 +1,12 @@
+.search-results__images {
+    overflow-x: auto;
+    width: 150px;
+    height: 150px;
+    border: 10px solid;
+    border-color: white;
+    padding: 3px;
+}
+
+.search-results__images:hover {
+    border-color: #bf0016;
+}

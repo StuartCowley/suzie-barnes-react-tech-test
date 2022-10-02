@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# React Tech Test
+A NASA search engine which will search the database for records matching your entry.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just enter the information you are looking for into the search bar and hit "Submit" a list of images matching your description will appear.
 
-## Available Scripts
+On Desktop Site:
 
-In the project directory, you can run:
+![alt text](./public/tech-test-pc.png) 
 
-### `npm start`
+On Mobile Site:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![alt text](./public/tech-test-mobile.png) <br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+----------------
+ ### Installation Instructions
+1. Run `git clone https://github.com/SuzBarnes/react-tech-test.git` into the console.
+2. `cd` into the new directory
+3. Run `npm install`
+----------------
+### Useful Commands:
+|How to...| Command  | Further Details|
+|---------|----------|----------------|
+|Start the app|`npm start`|it will load on localhost:3000|
+|Test| `npm test`| the tests will take place and any errors will be displayed in your console|
+|Format| `npx prettier --write .`| Prettier is the ESLint tool used to help with formatting of the App
+----------------
+### How to use:
+1. Use the search bar to enter the image you would like to look for: 
 
-### `npm test`
+![alt text](./public/type-in-search.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Click the "Search" button
 
-### `npm run build`
+![alt text](./public/hit-submit.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. A table of images fitting the description will be visible.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](./public/search-results.png)
+----------------
+### Technologies
+- Created by bootstrapping the Create React App (https://github.com/facebook/create-react-app).
+- Uses JavaScript, JSX, CSS.
+- Packages used Axios, PropTypes.
+- Testing utilities used Jest, React Testing Library
+----------------
+### Further time
+If I had further time I would have loved to:
+- open the image file larger when clicked,
+- adjusted the CSS to make the App  more interactive,
+- added an improved error messages when a search returned no results
+- written further tests,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created by Suzannah  Barnes 2022
